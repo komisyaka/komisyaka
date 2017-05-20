@@ -1,0 +1,41 @@
+.bs-countdown-timer {
+	border: 1px solid rgba(0,0,0,0.1);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 10px;
+}
+.bs-countdown-timer .col-xs-3 {
+    padding-left: 0px;
+    width: 120px;
+/*    height: 130px;*/
+	text-align: center;
+vertical-align: middle;
+}
+.bs-countdown-timer .col-xs-3:last-child::after {
+	content: '';
+	display: none;
+}
+.bs-countdown-timer .numcard {
+	border: none;
+	border-radius: 8px;
+	width: 80px;
+	height: 90px;
+	margin: 0 auto;
+	background: rgba(255,255,255,0.5);
+	padding-top: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+.bs-countdown-timer .numcard-number {
+	font-size: 36px;
+	line-height: 42px;
+	display: block;
+    text-align: center;
+}
+.bs-countdown-timer .numcard-desc {
+	font-size: 18px;
+	padding: 0;
+	display: block;
+	color: rgba(0,0,0,0.5);
+}
+
