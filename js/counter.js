@@ -6,30 +6,27 @@ $.fn.bs_countdown_timer = function(){
 				$('<div class="col-xs-3">').append(
 					$('<div class="numcard">').append(
 						$('<span class="numcard-number days">')
-//						$('<span class="numcard-desc">').text('Дней')
 					),
-                    $('<span class="numcard-desc">').text('Дней')
+                    $('<span class="numcard-desc">').text('days')
 				),
 				$('<div class="col-xs-3">').append(
 					$('<div class="numcard">').append(
 						$('<span class="numcard-number hours">')
-//						$('<span class="numcard-desc">').text('Часов')
 					),
-                    $('<span class="numcard-desc">').text('Часов')
+                    $('<span class="numcard-desc">').text('Hours')
 				),
 				$('<div class="col-xs-3">').append(
 					$('<div class="numcard">').append(
 						$('<span class="numcard-number mins">')
-//						$('<span class="numcard-desc">').text('Минут')
 					),
-                    $('<span class="numcard-desc">').text("Минут")
+                    $('<span class="numcard-desc">').text("Minutes")
 				),
 				$('<div class="col-xs-3">').append(
 					$('<div class="numcard">').append(
 						$('<span class="numcard-number secs">')
 //						$('<span class="numcard-desc">').text('Секунд')
 					),
-                    $('<span class="numcard-desc">').text('Секунд')
+                    $('<span class="numcard-desc">').text('Seconds')
 				)
 			)
 		);
