@@ -20,6 +20,7 @@
 	<!-- Основной файл стилей для карусели -->
 	<link rel="stylesheet" href="css/style2.css">
   
+    <link href="css/jquery.parallax.css" rel="stylesheet">
     <!--мои стили-->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -29,13 +30,23 @@
     <script type='text/javascript' src="js/bootstrap.js"></script>
     <script type='text/javascript' src="js/bootstrap.min.js"></script>
     
+
+	<link rel="stylesheet" href="./jQuery.parallax_files/jquery.parallax.css">
+    <style type="text/css" media="screen, projection">
+		#port {
+    
+    overflow: hidden;
+    position: relative;
+    height: 405px;
+    width: 460px;
+    top: 5px;
+    left: 458.5px;
+		}
+	</style>
     </head >
     
     <body>
-<!--<div class="container">     -->
-        
-<!--  фиксированая голова -->  
-<!--      <div class="topline" stye="position: absoulute; top: 0px; width:100%; ">-->
+
             <div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -46,77 +57,76 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="#">COMICS SHOP №1</a>
-          <a class="navbar-brand" ><img src="photo/logo.png"> </a>
+          <a class="navbar-brand" ><img src="photo/logo.png" alt="logo"> </a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-<!--            <li class="active"><a href="#">Home</a></li>-->
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a class="nav-right" href="#o_nas">UBOAT US</a></li>
-            <li><a class="nav-right"  href="#assortiment">ANGE</a></li>
-            <li><a class="nav-right"  href="#otzv">REVIEWS</a></li>
-            <li><a class="nav-right"  href="###">CONTACTS</a></li>
+            <li><a class="nav-right" data-spy="scroll" data-target="#uboat_us" href="#uboat_us">UBOAT US</a></li>
+            <li><a class="nav-right" data-spy="scroll" data-target="#ange" href="#ange">ANGE</a></li>
+            <li><a class="nav-right" data-spy="scroll" data-target="#reviews" href="#reviews">REVIEWS</a></li>
+            <li><a class="nav-right" data-spy="scroll" data-target="#contacts" href="#contacts">CONTACTS</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </div>     
-        
-<!--        </div>-->
-         
-       
-
-        <div class="center-block"> <!--        обложка-->
-        
-        <img id="img_left" alt="Responsive image" src="css/fon_left.png">
-        <img id="img_right" alt="Responsive image" src="css/fon_right.png">
-        </div>    
+   
+ <section  class="center-block"> <!--        обложка-->
 <!--
-        <div style="position: absolute; top: 50px;">
-        <p>kgkdg;kegksoktggggggg</p>    
-        </div>
+        
+        <img id="img_left" alt="Responsive image" src="css/fon_left.png" style="z-index: 1;">
+        <img id="img_right" alt="Responsive image" src="css/fon_right.png" style="z-index: 2;">
 -->
+        
+
+		<div id="port" style="z-index:3;" >
+
+			<img class="parallax-layer" src="jQuery.parallax_files/0.png" alt="" style="width: 449px; height: 391px; top: 52.867%; margin-top: -191.318px; left: 54%; margin-left: -250px;">
+			<img class="parallax-layer" src="jQuery.parallax_files/1.png" alt="" style="width: 441px; height: 383px; top: 52.867%; margin-top: -193.084px; left: 54%; margin-left: -250px;">
+			<img class="parallax-layer" src="jQuery.parallax_files/2.png" alt="" style="width: 433px; height: 375px; top: 52.867%; margin-top: -196.027px; left: 54%; margin-left: -250px;">
+			<img class="parallax-layer" src="jQuery.parallax_files/3.png" alt="" style="width: 425px; height: 367px; top: 52.867%; margin-top: -201.914px; left: 54%; margin-left: -250px;">
+			
+		</div>
+	</div>
+        </section>    
         <hr>
-<div class="container">
-         <div class="row">
+<div id="uboat_us" class="container">
+    <section class="row">
             <!--        о нас-->
-           <a name="o_nas" ></a>
-            <div class="col-md-8 col-sm-12"><p>Hello! Welcome to Komisyaka.
+            <div class="col-md-8 col-sm-12">
+                <p>
+            Hello! Welcome to Komisyaka.
 Do you like comics and everything related to them?
 Do you follow the latest novelties produced by famous publishers such as MARVEL and DC?
 Or do you just like to read interesting books with beautiful pictures, or do you want to buy a comic book as a gift for a child?
 Then you turned to where you want!
-Subscribe and get to know about new comic books first!</p></div>
+Subscribe and get to know about new comic books first!
+                </p>
+            </div>
 
             <div >
-                <img class="col-md-3 col-md-offset-1 hidden-xs hidden-sm" src="photo/dedpool.png">
+                <img class="col-md-3 col-md-offset-1 hidden-xs hidden-sm" src="photo/dedpool.png" alt="dedpool">
             </div>
                 
-                        <button type="button" class="btn btn-danger btn-lg col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">SUBSCRIBE</button>
-          </div>                     
-
-    </div>
-  <!--        подписка                   -->  
-   
-    <div class="subscription" >
+                <button type="button" class="btn btn-danger btn-lg col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">SUBSCRIBE</button>
+          </section>  
+</div>  
+<section class="subscription" >
      <div class="row container">
 <!--    таймер-->
   
     <div class="col-lg-5 col-md-5 col-xs-12 col-cm-12" > 
-        <span class="subscr_p"> Subscribe and receive a 15% discount on collectible editions</span><br><br>
+        <span class="subscr_p"> Subscribe and receive a 15% discount on collectible editions</span>
+        <br><br>
         <span class="subscr_p">Until the end of the action is left:</span>  
-           
-<!--			<div class="col-md-6 col-md-offset-3">-->
-				<div class="countdown-timer" data-date="2018-01-01"></div>
-<!--			</div>-->
-
+   				<div class="countdown-timer" data-date="2018-01-01"></div>
         </div>  
     
 <!--подписка        -->
-   <div class="col-lg-5 col-md-5 col-xs-12 col-cm-12 col-lg-offset-2 col-md-offset-2 SUBSCRIBE">
-       <span class="subscr_p2">SUBSCRIBE:</span>
+   <div class="col-lg-5 col-md-5 col-xs-12 col-cm-12 col-lg-offset-2 col-md-offset-2 subscribe">
        
-       <form role="form" style="padding-top: 20px;">
+       <form role="form">
   <div class="form-group">
    <input type="text" class="form-control" placeholder="Introduce yourself, please">
     <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
@@ -127,17 +137,14 @@ Subscribe and get to know about new comic books first!</p></div>
      <button type="button" class="btn btn-danger btn-lg btn-sub ">SUBSCRIBE</button>  
    </div>
         </div>
-    </div>
-<!--        ассортимент-->
-    
-        </div>
-            <a name='assortiment' ></a>
+    </section>
+<section>
              <div  class="col-md-12 back_liner col-xs-12 col-lg-12" align="center">
                     What will you find in the store?
             </div>
             
-    <div class="row karusel" style="">
-        <div class="col-md-8 col-lg-8 col-xs-12">
+    <div id="ange" class="row karusel">
+        <div  class="col-md-8 col-lg-8 col-xs-12">
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
           <!-- Indicators -->
               <ol class="carousel-indicators">
@@ -150,53 +157,52 @@ Subscribe and get to know about new comic books first!</p></div>
           <!-- Wrapper for slides -->
               <div class="carousel-inner" style="border-radius: 14px">
             <div class="item active">
-              <img src="photo/slide1.jpg" alt="">
+              <img src="photo/slide1.jpg" alt="sl1">
             </div>
             <div class="item">
-              <img src="photo/slide2.jpg" alt="">
+              <img src="photo/slide2.jpg" alt="sl2">
             </div>
             <div class="item">
-              <img src="photo/slide4.jpg" alt="">
+              <img src="photo/slide4.jpg" alt="sl4">
             </div>
             <div class="item">
-              <img src="photo/slide5.jpg" alt="">
+              <img src="photo/slide5.jpg" alt="sl5">
             </div>
               </div>
 
         </div>
 
                </div>
-        <img class="col-lg-3 hidden-sm hidden-md hidden-xs" src="photo/marvel.png" style="padding-right: 5%;">
-        <img class="clearfix col-lg-3 hidden-sm hidden-md hidden-xs" style="padding-top: 21.8px; padding-right: 5%;" src="photo/dc.png">
+        <img class="col-lg-3 hidden-sm hidden-md hidden-xs" src="photo/marvel.png" alt="marvel" style="padding-right: 5%;">
+        <img class="clearfix col-lg-3 hidden-sm hidden-md hidden-xs" style="padding-top: 21.8px; padding-right: 5%;" src="photo/dc.png" alt="ds">
 
 
     </div>
-        
+</section>
  <hr>       
-  <a name='otzv' ></a>
-   <div id="testimonials">
-		<div class="container">
+<section id="testimonials ">
+		<div id="reviews" class="container">
 			<div class="block-one-example">
 			<div id='otzuvu'>REVIEWS</div>
 				<div id="customNav" class="owl-my-nav"></div>
 				<div class="owl-carousel block-items">
 				    <div class="item">
 				    	<div class="inner-testimonial">
-				    		<img src="photo/otz1.bmp" class="full-opacity" style="float: left; padding-right: 10px;" style="" alt="Клиент 1">
+				    		<img src="photo/otz1.bmp" class="full-opacity" style="float: left; padding-right: 10px;" alt="Клиент 1">
 				    		<h3 class="city-name">Peter Parker</h3>
 				    		<p class="text-testimonial">Charming store and very helpful staff.  I am very careful about gifts for children and they had a nice selection of items made in the USA. Also knew their stock and what to recommend.  Varied price range.. I can't wait to return when I need more gifts.</p>
 				    	</div>
 			    	</div>
 				    <div class="item">
 				    	<div class="inner-testimonial">
-							<img src="photo/otz2.bmp" style="float: left; padding-right: 10px;" class="full-opacity"  style="" alt="Клиент 2">
+							<img src="photo/otz2.bmp" style="float: left; padding-right: 10px;" class="full-opacity" alt="Klient 2">
 				    		<h3 class="city-name">Ryan Reynolds</h3>
 				    		<p class="text-testimonial">  It's tough to find a working variety of toys, games, puzzles, and what-not in a small store, but this place does a nice job. I found an interesting variety here.  The other advantage you have here is that it is very easy to converse with the owner, who is very eager to help you. </p>
 				    	</div>
 			    	</div>
 				    <div class="item">
 				    	<div class="inner-testimonial">
-				    		<img src="photo/otv3.bmp" class="full-opacity" style="float: left; padding-right: 10px;" style="" alt="Клиент 3">
+				    		<img src="photo/otv3.bmp" class="full-opacity" style="float: left; padding-right: 10px;" alt="Клиент 3">
 				    		<h3 class="city-name">Scarlett Johansson</h3>
 				    		<p class="text-testimonial">What a nice store - great to find that special gift you need, for kids and adults likewise. They gladly assist in finding what you need & I have gotten a lot of unique presents here. They keep getting new items all the time, so make sure to stop by whenever you are in Cold Spring.</p>
 				    	</div>
@@ -204,26 +210,26 @@ Subscribe and get to know about new comic books first!</p></div>
 				</div>
 			</div><!-- .block-one-example -->
 		</div>		
-	</div>
-
+	</section>
+<section id="shop">
             <div  class="col-md-12 back_liner col-xs-12 col-lg-12" align="center">
                     Come to our cozy store! <br>
                      Here everyone will find something for themselves
             </div>
-<div class="col-lg-12 carousel-h">            
+            <div class="col-lg-12 carousel-h">            
     <div id="carousel-example-generic2" class="carousel slide col-lg-6 col-lg-offset-3" data-ride="carousel">
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <img src="photo/333.jpg" alt="...">
+      <img src="photo/333.jpg" alt="Shop1">
       
     </div>
     <div class="item">
-        <img src="photo/raz.jpg">
+        <img src="photo/raz.jpg" alt="Shop2">
     </div>
     <div class="item">
-        <img src="photo/%D0%BE_%D0%BD%D0%B0%D1%81_1.jpg">
+        <img src="photo/%D0%BE_%D0%BD%D0%B0%D1%81_1.jpg" alt="Shop3">
     </div>
   </div>
 
@@ -235,26 +241,28 @@ Subscribe and get to know about new comic books first!</p></div>
     <span class="glyphicon glyphicon-chevron-right"></span>
   </a>
 </div>
-</div>  
-  <div class="col-lg-11 col-lg-offset-1">
+</div> 
+</section>
+<section>
+<div class="col-lg-11 col-lg-offset-1">
       <p style="padding-top: 20px; height: 70px;"> HOW TO GET TO US</p>
-  </div>
-  <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+</div>
+  <div id="contacts" class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
        <iframe class="maps col-lg-8" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.5974875805236!2d37.62621431560038!3d55.730746980547465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDQzJzUwLjciTiAzN8KwMzcnNDIuMiJF!5e0!3m2!1sru!2sru!4v1494589443250" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
     <table style="margin-left: 3%;"> 
         <tr>
-            <td><img src="photo/phone.bmp"></td>
+            <td><img src="photo/phone.bmp" alt="phone"></td>
             <td>PHONE:</td>
             <td>8(916)090-32-86</td>
         </tr>
         <tr>
-            <td><img src="photo/mail.bmp"></td>
+            <td><img src="photo/mail.bmp" alt="mail"></td>
             <td>MAIL:</td>
             <td>INFO@COMISYAKA.RU</td>
         </tr>
         <tr>
-            <td><img src="photo/point.bmp"></td>
+            <td><img src="photo/point.bmp" alt="point"></td>
             <td>ADDRESS:</td>
             <td> MOSCOW, STR.VAVILOVA, H.7</td>
         </tr>
@@ -264,13 +272,14 @@ Subscribe and get to know about new comic books first!</p></div>
      <div>
       <div id='otzuvu'>Find us on </div>
        <div class="social col-lg-6 col-lg-offset-6 col-md-8 col-md-offset-6 col-sm-8 col-xs-8 col-xs-offset-2" style="margin-top: 20px;" id="social">
-           <img class="social_img" src="photo/twiter.bmp">
-           <img class="social_img" src="photo/facebook.bmp">
-           <img class="social_img" src="photo/google.bmp">
-           <img class="social_img" src="photo/vk.bmp">
+           <img class="social_img" src="photo/twiter.bmp" alt="twiter">
+           <img class="social_img" src="photo/facebook.bmp" alt="fb">
+           <img class="social_img" src="photo/google.bmp" alt="Google+">
+           <img class="social_img" src="photo/vk.bmp" alt="VK">
         </div>
     
 </div>
+ </section>
   <footer class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
       2016-2017 @Komisyaka - Comics shop #1
       
@@ -281,16 +290,36 @@ Subscribe and get to know about new comic books first!</p></div>
 	<script src="libs/owl-carousel/owl.carousel.min.js"></script>
 	<script src="js/custom.js"></script>
 
-   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<!--	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/counter.js"></script>
+	
+	<script src="jQuery.parallax_files/jquery.parallax.js"></script>
+	<script type="text/javascript">
+	
+		jQuery(document).ready(function(){
+			// Declare parallax on layers
+			jQuery('.parallax-layer').parallax({
+				mouseport: jQuery("#port")
+			});
+		});
+	</script>
+	
 	<script>
 		$(function() {
 			$('.countdown-timer').bs_countdown_timer();
 		});
 	</script>
-    
+    <script>
+   $(document).ready(function(){
+$('a[href*=#]').bind("click", function(e){
+var anchor = $(this);
+$('html, body').stop().animate({
+scrollTop: $(anchor.attr('href')).offset().top
+}, 2000);
+e.preventDefault();
+});
+return false;
+});
+    </script> 
     </body>
 </html>

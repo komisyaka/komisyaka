@@ -8,6 +8,7 @@
     src: url(ACMEB.ttf);} /* Путь к файлу со шрифтом */
 /*шрифты*/
 body{
+    overflow-x: hidden;
     font-family: Acme, sans-serif;
 }
 span, 
@@ -49,15 +50,19 @@ span,
     background-size: 100%;
     text-align: justify;
 }
-.SUBSCRIBE{
+.subscribe{
     background: linear-gradient(to bottom, rgba(255,255,0,0.0), rgba(255,255,255,0.9));
     border-radius: 15px;
 }
 .center-block{
+    background-image:url(img/top.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
     margin-top: 50px;
     margin-bottom: 0px;
     padding-bottom: 35%;
-    height: 0px;}
+    height: 0px;
+}
     #img_left{
     float: left;
     width: 100%;
@@ -71,7 +76,10 @@ span,
 }
 
 @media (max-width: 637px){
-    .btn-sub{
+form{
+  padding-top: 20px;
+}
+.btn-sub{
     margin: auto;
     position: relative;
     bottom: 5px;
@@ -80,7 +88,7 @@ span,
 .subscription{
 height: 500px;    
 }
-.SUBSCRIBE{
+.subscribe{
     padding-top: 20px;
     height: 270px;
 }
@@ -180,10 +188,13 @@ karusel{
 
 
 @media (min-width: 638px) {
+    form{
+  padding-top: 20px;
+    }
 .subscription{
 height: 600px;    
 }
-.SUBSCRIBE{
+.subscribe{
     text-align: center;
     padding-top: 20px;
     height: 320px;
@@ -284,6 +295,9 @@ p{
 
 
 @media (min-width: 1200px) {
+    form{
+  padding-top: 90px;
+    }
    #social {
     position: absolute;
     left: 130px;
@@ -291,7 +305,7 @@ p{
 .subscription{
 height: 400px;    
 }
-.SUBSCRIBE{
+.subscribe{
     padding-top: 0px;
     vertical-align: top;
     height: 350px;
