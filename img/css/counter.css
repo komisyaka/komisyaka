@@ -1,0 +1,74 @@
+.bs-countdown-timer {
+    margin-top: 0px;
+	border: 1px solid rgba(0,0,0,0.1);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 10px;
+    width: 100%;
+    align-content: center;
+    align-self: center;
+}
+.bs-countdown-timer .col-xs-3 {
+    padding-left: 0px;
+    width: 23%;
+    height: 75px;
+	text-align: center;
+ vertical-align: sub;
+}
+.bs-countdown-timer .col-xs-3:last-child::after {
+	content: '';
+	display: none;
+}
+
+
+.bs-countdown-timer .numcard {
+	border: none;
+	border-radius: 8px;
+/*	width: 75%;*/
+	height: 100%;
+	margin: 0 auto;
+	background: rgba(255,255,255,0.5);
+	
+    text-align: center;
+    vertical-align: sub;
+}
+.bs-countdown-timer .numcard-number {
+	font-size: 36px;
+	line-height: 42px;
+	display: block;
+    margin-top: 16%;
+    text-align: center;
+}
+.bs-countdown-timer .numcard-desc {
+	font-size: 18px;
+	padding: 0;
+	display: block;
+	color: rgba(255,255,255,0.9);
+}
+@media (max-width: 637px){
+    .bs-countdown-timer .numcard {
+        width: 60px;
+        padding-top: 7px;
+    }}
+@media (min-width: 638px) {
+    .bs-countdown-timer .numcard {
+        width: 80px;
+        padding-top: 10px;
+    }
+    .bs-countdown-timer .col-xs-3 {
+    padding-left: 0px;
+    width: 95px;
+    height: 85px;
+	text-align: center;
+ vertical-align: sub;
+}
+    bs-countdown-timer{
+      margin-left: 20em;  
+    }
+}
+ @media (min-width: 1200px){
+    .bs-countdown-timer .numcard {
+        width: 75%;
+    }
+}  
+    
